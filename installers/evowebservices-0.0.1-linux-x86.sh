@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 #
 # Script to install node JS, ERS dependencies, and the actual ERS code.
 #

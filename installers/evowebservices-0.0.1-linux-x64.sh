@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 #
 # Script to install node JS, ERS and PM2 package, and then start ERS.
 #
