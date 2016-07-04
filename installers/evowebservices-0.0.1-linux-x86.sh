@@ -30,10 +30,6 @@ echo 'Installing NPM evowebservices...'
 npm install --save https://github.com/EvoStream/evowebservices/tarball/master
 if [ $? != 0 ]; then echo 'Could not install EVOWEBSERVICES!'; exit 1; fi
 
-echo 'Installing pm2...'
-npm install pm2 -g
-if [ $? != 0 ]; then echo 'Could not install pm2!'; exit 1; fi
-
 # Change to where evowebservices is
 cd node_modules/evowebservices
 
@@ -42,4 +38,4 @@ echo 'Starting EVOWEBSERVICES...'
 npm start 
 if [ $? != 0 ]; then echo 'Could not start EVOWEBSERVICES!'; exit 1; fi
     
-exit 0
+exit 0;
