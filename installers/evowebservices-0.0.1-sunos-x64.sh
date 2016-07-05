@@ -18,7 +18,9 @@ if [ $? != 0 ]; then
 
     # Next, execute the following command to install the Node.js binary package in /usr/local/:
     tar zxf node-v$VER-$OS-$ARCH.tar.gz -C /usr/local --strip-components 1 
-    if [ $? != 0 ]; then echo 'Could not install Node.js!'; exit 1; fi
+    if [ $? != 0 ]; then echo 'Node.js: INSTALLATION FAILED! Please see errors below:'; exit 1; fi
+    
+    echo "Node.js: SUCCESSFUL INSTALLATION!" 
 
     
 else
@@ -28,7 +30,9 @@ fi
 # Install dependencies
 echo 'Installing NPM evowebservices...'
 npm install --save https://github.com/EvoStream/evowebservices/tarball/master
-if [ $? != 0 ]; then echo 'Could not install EVOWEBSERVICES!'; exit 1; fi
+if [ $? != 0 ]; then echo 'Evowebservices: INSTALLATION FAILED! Please see errors below:'; exit 1; fi
+
+echo "Evowebservices: SUCCESSFUL INSTALLATION!" 
 
 # Change to where evowebservices is
 cd node_modules/evowebservices
