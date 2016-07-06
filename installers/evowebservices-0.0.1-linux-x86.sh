@@ -28,7 +28,7 @@ fi
 
 # Install dependencies
 echo 'Installing NPM evowebservices...'
-npm install --save https://github.com/EvoStream/evowebservices/tarball/master
+npm install --save https://github.com/EvoStream/evowebservices/tarball/develop
 if [ $? != 0 ]; then echo 'Evowebservices: INSTALLATION FAILED! Please see errors below:'; exit 1; fi
 
 echo "Evowebservices: SUCCESSFUL INSTALLATION!" 
